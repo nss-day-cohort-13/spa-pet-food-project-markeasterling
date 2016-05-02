@@ -1,0 +1,16 @@
+body	{
+	font-family: "Open Sans", sans-serif;
+}
+
+#header	{
+		text-align: center;
+}
+
+#food_dogs {
+	float: left;
+
+}
+
+#food_cats {
+	float: right;
+}
