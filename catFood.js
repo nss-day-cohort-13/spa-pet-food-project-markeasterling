@@ -8,12 +8,13 @@ function executeThisCodeAfterFileIsLoaded() {
 		food_cats.innerHTML += `<h1> ${brands[i].name}</h1>`;
 		food_cats.innerHTML += `<div>suited for: ${brands[i].breeds}</div>`;
 
-			for (var j = 0; j < catData.cat_brands.length; j++)	{
+			for (var j = 0; j < brands[i].types.length; j++)	{
 				food_cats.innerHTML += `<h2> ${brands[i].types[j].type} </h2>`
 
-					for (k = 0; k < catData.cat_brands.length; k++)	{
-						food_cats.innerHTML += `<div> ${brands[i].types[j].volumes[k].name}: $${brands[i].types[j].volumes[k].price} </div>`;
-					}
+					for (k = 0; k < brands[i].types[j].volumes.length; k++)	{
+						food_cats.innerHTML += `<div> ${brands[i].types[j].volumes[k].name}:
+						$${brands[i].types[j].volumes[k].price} </div>`;
+					};
 			};
 	};
 };
