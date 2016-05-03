@@ -3,14 +3,18 @@ body	{
 }
 
 #header	{
-		text-align: center;
+	text-align: center;
 }
 
 #food_dogs {
 	float: left;
-
 }
 
 #food_cats {
-	float: right;
+	float: left;
+	margin-left: 5em;
+}
+
+.underline {
+	text-decoration: underline;
 }
